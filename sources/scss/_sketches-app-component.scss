@@ -1,0 +1,12 @@
+.SketchesApp {
+  &__editor-container {
+    width: 55%;
+    display: inline-block;
+    background: orange;
+  }
+  &__menu-container {
+    width: 45%;
+    display: inline-block;
+    background: black;
+  }
+}
