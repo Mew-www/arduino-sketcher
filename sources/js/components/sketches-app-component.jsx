@@ -20,7 +20,7 @@ export class SketchesAppComponent extends Component {
         })
       })
       .catch((error) => {
-        console.log(error);
+        document.body.innerHTML = "Error when requesting sketch listing, unable to continue (without sketch listing).";
       })
   }
   render() {
@@ -44,6 +44,7 @@ export class SketchesAppComponent extends Component {
             <SketchMenuComponent
               sketches={this.state.available_sketches}
               selected={this.state.selected_sketch}
+              select_a_sketch={(sketch) => {this.setState({selected_sketch: sketch});}}
             />
           }
         </div>
