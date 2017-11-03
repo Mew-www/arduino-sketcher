@@ -9,7 +9,8 @@ export class SketchMenuComponent extends Component {
     return (
       <div className="SketchMenu">
         <div className="SketchMenu__items">
-          {this.props.sketches.map((sketch) => <SketchMenuItemComponent sketch={sketch}
+          {this.props.sketches.map((sketch) => <SketchMenuItemComponent key={sketch.id}
+                                                                        sketch={sketch}
                                                                         select_a_sketch={this.props.select_a_sketch}/>
           )}
         </div>
