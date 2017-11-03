@@ -1,6 +1,9 @@
 @import "_reset-page.scss";
 @import "_sketches-app-component.scss";
+@import "_sketch-editor-component.scss";
+@import "_sketch-menu-component.scss";
+@import "_sketch-menu-item-component.scss";
 
 * {
-  color: red;
+  font-family: Helvetica, sans-serif;
 }
